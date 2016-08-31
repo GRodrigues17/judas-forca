@@ -1,2 +1,2 @@
-# judas-forca
-jogo da forca com o judas
+# Hangman Judas
+Hangman game with judas
