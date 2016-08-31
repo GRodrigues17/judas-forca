@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+    <style name="ButtonTeclado">
+        <item name="android:layout_width">35dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_weight">0.27</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:textColor">@color/texts_views</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingLeft">1dp</item>
+        <item name="android:paddingTop">1dp</item>
+        <item name="android:paddingRight">1dp</item>
+        <item name="android:paddingBottom">1dp</item>
+    </style>
+
+    <style name="Buttons">
+        <item name="android:layout_width">90dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_weight">0.27</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/texts_views</item>
+        <item name="android:background">@drawable/shape</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+
+    <style name="LayoutGrid">
+        <item name="android:layout_weight">0.27</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_toRightOf">@+id/layout_configuracoes</item>
+        <item name="android:background">@drawable/fundo_grid</item>
+    </style>
+
+    <style name="ImageViewConfig">
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    
+    <style name="TextViewTemas">
+        <item name="android:layout_marginRight">34dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_alignRight">@+id/layout_configuracoes</item>
+        <item name="android:text">@string/title_themes</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:textColor">@color/texts_views</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        
+    </style>
+    
+
+    
+        
+                 
+</resources>

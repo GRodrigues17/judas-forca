@@ -1,0 +1,54 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.forca"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <supports-screens android:requiresSmallestWidthDp="600" android:smallScreens="false" android:anyDensity="true" android:normalScreens="true"/>
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name="br.com.forca.beta.activities.SplashActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".beta.activities.ConfiguracaoActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="landscape" android:launchMode="singleInstance"/>
+
+        <activity
+            android:name=".beta.activities.JogoActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="landscape" />
+
+        <activity
+            android:name=".beta.activities.ResultadoActivity"
+            android:configChanges="keyboardHidden|orientation|screenLayout|screenSize"
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="landscape" />
+    </application>
+
+
+</manifest>

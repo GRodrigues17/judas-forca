@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_configuracoes"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imgCorpo_Completo"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            style="@style/ImageViewConfig"
+            android:src="@drawable/escolha" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        style="@style/LayoutGrid"
+        android:gravity="center" >
+
+        <GridView
+            android:id="@+id/gridTemas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="5dp"
+            android:numColumns="4"
+            android:verticalSpacing="5dp" >
+        </GridView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_som"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/layout_configuracoes"
+        android:gravity="bottom|left" >
+
+        <ToggleButton
+            android:id="@+id/btnSom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginBottom="0.1dp"
+            android:layout_marginLeft="12dp"
+            android:background="@drawable/shape"
+            android:checked="true"
+            android:onClick="onToggleClicked"
+            android:textAlignment="center"
+            android:textColor="@color/texts_views"
+            android:textOff="@string/btn_sound_off"
+            android:textOn="@string/btn_sound_on"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtTemas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textAlignment="center"
+        style="@style/TextViewTemas" />
+
+</RelativeLayout>

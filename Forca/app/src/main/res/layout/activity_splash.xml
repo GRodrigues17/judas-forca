@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+xmlns:tools="http://schemas.android.com/tools"    
+android:layout_width="match_parent"    
+android:layout_height="match_parent"    
+android:background="#fff"    
+tools:context=".SplashActivity" >
+
+    
+<LinearLayout
+        
+android:id="@+id/fullscreen_content_controls"        
+android:layout_width="match_parent"        
+android:layout_height="match_parent"        
+android:background="@color/background_splash"       
+android:gravity="center_vertical"        
+android:orientation="vertical">
+
+<ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="350dp"
+    android:layout_height="300dp"
+    android:layout_gravity="center"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/splash" />
+    
+</LinearLayout>
+
+
+
+</FrameLayout>
+

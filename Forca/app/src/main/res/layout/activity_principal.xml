@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/horizontalScrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffff" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/imgInício"
+            android:layout_width="261dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/background" >
+        </ImageView>
+
+        <LinearLayout
+            android:id="@+id/layout_teclado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="250dp"
+            android:layout_marginRight="15dp" >
+
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="165dp"
+                android:stretchColumns="0,1,2,3,4" >
+
+                <TableRow
+                    android:layout_marginTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingRight="1dp" >
+
+                    <LinearLayout android:layout_gravity="left" >
+
+                        <Button
+                            android:id="@+id/btnA"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click" 
+                            android:text="@string/label_a" />
+
+                        <Button
+                            android:id="@+id/btnE"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_e" />
+
+                        <Button
+                            android:id="@+id/btnI"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_i" />
+
+                        <Button
+                            android:id="@+id/btnO"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_o" />
+
+                        <Button
+                            android:id="@+id/btnU"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_u" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingRight="1dp" >
+
+                    <LinearLayout android:layout_gravity="left" >
+
+                        <Button
+                            android:id="@+id/btnB"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_b" />
+
+                        <Button
+                            android:id="@+id/btnC"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_c" />
+
+                        <Button
+                            android:id="@+id/btnD"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_d" />
+
+                        <Button
+                            android:id="@+id/btnF"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_f" />
+
+                        <Button
+                            android:id="@+id/btnG"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_g" />
+
+                        <Button
+                            android:id="@+id/btnH"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_h" />
+
+                        <Button
+                            android:id="@+id/btnJ"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_j" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingRight="1dp" >
+
+                    <LinearLayout android:layout_gravity="left" >
+
+                        <Button
+                            android:id="@+id/btnK"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_k" />
+
+                        <Button
+                            android:id="@+id/btnL"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_l" />
+
+                        <Button
+                            android:id="@+id/btnM"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_m" />
+
+                        <Button
+                            android:id="@+id/btnN"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_n" />
+
+                        <Button
+                            android:id="@+id/btnP"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_p" />
+
+                        <Button
+                            android:id="@+id/btnQ"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_q" />
+
+                        <Button
+                            android:id="@+id/btnR"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_r" />
+                    </LinearLayout>
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="1dp"
+                    android:paddingBottom="1dp"
+                    android:paddingRight="1dp" >
+
+                    <LinearLayout android:layout_gravity="left" >
+
+                        <Button
+                            android:id="@+id/btnS"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_s" />
+
+                        <Button
+                            android:id="@+id/btnT"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_t" />
+
+                        <Button
+                            android:id="@+id/btnV"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_v" />
+
+                        <Button
+                            android:id="@+id/btnW"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_w" />
+
+                        <Button
+                            android:id="@+id/btnX"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_x" />
+
+                        <Button
+                            android:id="@+id/btnY"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_y" />
+
+                        <Button
+                            android:id="@+id/btnZ"
+                            style="@style/ButtonTeclado"
+                            android:onClick="click"
+                            android:text="@string/label_z" />
+                    </LinearLayout>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_txtTema"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/layout_completo" >
+
+            <ImageView
+                android:id="@+id/imgTema"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txtTema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="7dp"
+                android:text="@string/title_selected_theme"
+                android:textColor="@color/texts_views" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutPalavra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layout_teclado"
+            android:layout_alignLeft="@+id/layout_teclado"
+            android:layout_marginBottom="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_completo"
+            android:layout_width="250dp"
+            android:layout_height="fill_parent" >
+
+            <ImageView
+                android:id="@+id/imgCorpo_Completo"
+                android:layout_width="100dp"
+                android:layout_height="190dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="135dp"
+                android:layout_marginTop="80dp"
+                android:src="@drawable/img1" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</HorizontalScrollView>
